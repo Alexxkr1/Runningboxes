@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(7, 63, 126);
+}
+
+.container{
+    margin: 2rem auto;
+    height: 804px;
+    width: 804px;
+    left: 18px;
+    top: 30px;
+    background-image: url("mountain.png");
+    position: relative;
+}
+
+
+.box{
+
+    border-radius: 5%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: Runningbox 45s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Runningbox{
+ 0% {left: 600px; top: 300px;}
+ 15% {left: 400px; top: 350px}
+ 25% {left: 300px; top: 320px}
+ 50% {left: 50px; top: 370px;}
+ 75% {left: 50px; top: 280px;}
+ 85% {left: 50px; top: 350px;}
+ 100% {left: 600px; top: 300px;}
+} 
+
+.box2{
+
+    border-radius: 5%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: Runningbox2 45s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Runningbox2{
+    0% {left: 0; top: 600px;}
+    15% {left: 10px; top: 550px}
+    25% {left: 280px; top: 380px}
+    50% {left: 600px; top: 550px}
+    75% {left: 280px; top: 380px}
+    85% {left: 10px; top: 550px}
+    100% {left: 0; top: 600px;}
+   } 
+/*
+
+ 50% {left: 600px; top: 600px;}
+ 75% {left: 0; top: 600px;}
+ 100% {left: 0; top: 600px;}
+
+@keyframes Runningbox{
+    0% {left: 0; top: 0;}
+    10% {left: 18px; top: 30px;}
+    25% {left: 35px; top: 50px;}
+    35% {left: 25px; top: 46px;}
+    45% {left: 15px; top: 35px;}
+    55% {left: 10px; top: 25px;}
+    65% {left: 8px; top: 25px;}
+    75% {left: 10px; top: 21px;}
+    85% {left: 14px; top: 23px;}
+    95% {left: 17; top: 28px;}
+    100% {left: 20px; top: 33px;}
+}
+*/
