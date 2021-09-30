@@ -16,7 +16,24 @@
         <div class="box2">
             <img src="png.png" alt="" width="100%">
         </div>
+        <div class="box3">
+            <img src="png.png" alt="" width="100%">
+        </div>
     </div>
     
+    <script>
+        var clouds = document.getElementsByClassName("box3");
+        document.onmousemove = function(){
+          var x = event.clientX * 100 / window.innerWidth + "%";
+          var y = event.clientY * 100 / window.innerHeight + "%";
+
+      
+          for(var i=0;i<2;i++){
+            clouds[i].style.left = x;
+            clouds[i].style.top = y;
+            clouds[i].style.transform = "translate(-"+x+",-"+y+")";
+          }
+        }
+      </script>
 </body>
 </html>
